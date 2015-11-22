@@ -1,13 +1,13 @@
 ## Put comments here that give an overall description of what your
 ## functions do
-## makeCacheMatrix - creates a special matrix object with set/get accessor methods to
-## the matrix and its stored inverse.
+## makeCacheMatrix - creates a special matrix object. Returns a list of set/get accessor
+## functions for the matrix and its inverse
 ## 
-## cacheSolve - returns the inverse of an invertable matrix, fist checking to see if
-## a cached resu;t is available before returning the calculated inverse
+## cacheSolve - returns the inverse of an invertable matrix object created by makeCacheMatrix(), fist checking to see if
+## a cached result is available before returning the calculated inverse
 
 
-## makeCacheMatrix - creates a matrix object and returns list of accessor methods
+## makeCacheMatrix - creates a matrix object and returns list of accessor functions
 makeCacheMatrix <- function(x = matrix()) {
   
   set <- function(y) {
